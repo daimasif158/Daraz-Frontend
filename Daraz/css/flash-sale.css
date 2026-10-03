@@ -1,0 +1,77 @@
+.flash-sale-section {
+  margin: 20px 0;
+}
+
+.flash-header {
+  background-color: #fff;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--daraz-border);
+}
+
+.flash-title-area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.flash-title {
+  color: var(--daraz-orange);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.timer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #212121;
+}
+
+.timer-boxes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.time-box {
+  background-color: var(--daraz-orange);
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 2px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.time-colon {
+  font-weight: 700;
+  color: var(--daraz-orange);
+}
+
+.shop-more-btn {
+  border: 1px solid var(--daraz-orange);
+  color: var(--daraz-orange);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.shop-more-btn:hover {
+  background-color: var(--daraz-orange);
+  color: #fff;
+}
+
+.flash-products-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  background-color: #fff;
+  padding: 12px;
+}

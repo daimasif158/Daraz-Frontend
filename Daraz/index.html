@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Shopping in Pakistan: Fashion, Electronics & Groceries - Daraz.pk</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/banner.css" />
+  <link rel="stylesheet" href="css/flash-sale.css" />
+  <link rel="stylesheet" href="css/products.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Solid Orange Navbar -->
+  <header class="daraz-navbar">
+    <div class="container">
+      <div class="top-nav-row">
+        <div class="top-links-left">
+          <a href="#">SAVE MORE ON APP</a>
+          <a href="#">SELL ON DARAZ</a>
+          <a href="#">HELP & SUPPORT</a>
+        </div>
+        <div class="top-links-right">
+          <a href="#">LOGIN</a>
+          <a href="#">SIGN UP</a>
+        
+        </div>
+      </div>
+
+      <div class="main-nav-row">
+        <div class="logo">
+          <a href="#">
+            <span class="logo-daraz">daraz</span>
+            <span class="logo-pk">pk</span>
+          </a>
+        </div>
+
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search in Daraz" />
+          <button class="search-btn" id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="cart-box">
+          <a href="#" class="cart-link">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      
+      <!-- Slider Banner -->
+      <div class="slider-track" id="sliderTrack">
+          <!-- Slide 1: Electronics 50% Off -->
+          <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80" alt="Banner 1" />
+            <div class="banner-overlay">
+              <span class="banner-tag">LIMITED TIME OFFER</span>
+              <h2 class="banner-heading">MEGA SALE</h2>
+              <div class="discount-badge-large">FLAT 50% OFF</div>
+              <p class="banner-subtext">Free Shipping On First Order</p>
+              <a href="#flashProducts" class="banner-shop-btn">SHOP NOW <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Slide 2: Furniture Deals -->
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80" alt="Banner 2" />
+            <div class="banner-overlay">
+              <span class="banner-tag">NEW ARRIVALS</span>
+              <h2 class="banner-heading">HOME & LIVING</h2>
+              <div class="discount-badge-large">UP TO 60% OFF</div>
+              <p class="banner-subtext">Upgrade Your Living Space</p>
+              <a href="#flashProducts" class="banner-shop-btn">EXPLORE DEALS <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Slide 3: Smartphones Discount -->
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80" alt="Banner 3" />
+            <div class="banner-overlay">
+              <span class="banner-tag">DARAZ EXCLUSIVE</span>
+              <h2 class="banner-heading">TECH CARNIVAL</h2>
+              <div class="discount-badge-large">SAVE UP TO 45%</div>
+              <p class="banner-subtext">Official Flagship Stores Only</p>
+              <a href="#flashProducts" class="banner-shop-btn">GRAB NOW <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+     
+  </section>
+
+  <!-- Flash Sale Section -->
+  <section class="flash-sale-section">
+    <div class="container">
+      <div class="flash-header">
+        <div class="flash-title-area">
+          <span class="flash-title">Flash Sale</span>
+          <div class="timer-wrapper">
+            <span class="timer-label">Ending in</span>
+            <div class="timer-boxes">
+              <span class="time-box" id="hours">00</span>
+              <span class="time-colon">:</span>
+              <span class="time-box" id="minutes">00</span>
+              <span class="time-colon">:</span>
+              <span class="time-box" id="seconds">00</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="shop-more-btn">SHOP ALL PRODUCTS</a>
+      </div>
+
+      <div class="flash-products-grid" id="flashProducts">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-heading">Categories</div>
+      <div class="categories-grid" id="categoriesGrid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Just For You Section -->
+  <section class="just-for-you-section">
+    <div class="container">
+      <div class="section-heading">Just For You</div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered via JS -->
+      </div>
+      <div class="load-more-wrap">
+        <button id="loadMoreBtn" class="load-more-btn">LOAD MORE</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="daraz-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">How to Buy</a></li>
+          <li><a href="#">Corporate & Bulk Purchasing</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Daraz Shop</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Purchase Protection</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Daraz</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Digital Payments</a></li>
+          <li><a href="#">Daraz Donates</a></li>
+          <li><a href="#">Daraz Blog</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Online Shopping App</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Payment Methods</h3>
+        <div class="payment-badges">
+          <span class="badge">Cash On Delivery</span>
+          <span class="badge">Visa</span>
+          <span class="badge">Mastercard</span>
+          <span class="badge">JazzCash</span>
+          <span class="badge">Easypaisa</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; All rights reserved. Daraz 2026.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Messages Button -->
+  <div class="floating-chat-btn">
+    <i class="fa-regular fa-message"></i> Messages
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/slider.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
